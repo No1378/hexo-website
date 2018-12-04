@@ -45,9 +45,12 @@ cache:
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
+  # small: /images/favicon-16x16-next.png
+  small: /images/favicon.ico
+  # medium: /images/favicon-32x32-next.png
+  medium: /images/favicon.ico
+  # apple_touch_icon: /images/apple-touch-icon-next.png
+  apple_touch_icon: /images/favicon.ico
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
@@ -543,7 +546,7 @@ valine:
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction
 gitment:
-  enable: false
+  enable: true
   mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button

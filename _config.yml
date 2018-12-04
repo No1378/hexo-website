@@ -79,4 +79,11 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+- type: rsync
+  host: 47.105.165.209
+  user: root
+  root: /WebServers/Documents/hexo
+  port: 22
+- type: git
+  repo: git@github.com:unclealan/hexo-blog-static-files.git
+  branch: master
