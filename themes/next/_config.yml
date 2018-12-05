@@ -45,12 +45,9 @@ cache:
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
-  # small: /images/favicon-16x16-next.png
-  small: /images/favicon.ico
-  # medium: /images/favicon-32x32-next.png
-  medium: /images/favicon.ico
-  # apple_touch_icon: /images/apple-touch-icon-next.png
-  apple_touch_icon: /images/favicon.ico
+  small: /images/favicon-16x16-next.png
+  medium: /images/favicon-32x32-next.png
+  apple_touch_icon: /images/apple-touch-icon-next.png
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
@@ -202,11 +199,15 @@ social_icons:
 
 # Blog rolls
 links_icon: link
-links_title: Links
-links_layout: block
-#links_layout: inline
-#links:
-  #Title: http://example.com
+links_title: 友情链接
+#links_layout: block
+links_layout: inline
+
+# 友情链接
+links:
+  佩佩的博客: http://unclealan.cn
+  铭哥教程: http://learn.fuming.site
+  铭哥主页: http://fuming.site
 
 # Sidebar Avatar
 avatar:
@@ -320,10 +321,10 @@ codeblock:
     show_result: false
 
 # Wechat Subscriber
-#wechat_subscriber:
-  #enabled: true
-  #qcode: /path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg
-  #description: ex. subscribe to my blog by scanning my public wechat account
+wechat_subscriber:
+  enabled: false
+  qcode:  /images/qrcode.jpg
+  description: 欢迎您扫一扫上面的微信公众号！
 
 # Reward
 # If true, reward would be displayed in every article by default.
@@ -551,11 +552,11 @@ gitment:
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
   cleanly: false # Hide 'Powered by ...' on footer, and more
-  language: # Force language, or auto switch by theme
-  github_user: # MUST HAVE, Your Github Username
-  github_repo: # MUST HAVE, The name of the repo you use to store Gitment comments
-  client_id: # MUST HAVE, Github client id for the Gitment
-  client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  language: zh-CN # Force language, or auto switch by theme
+  github_user: unclealan # MUST HAVE, Your Github Username
+  github_repo: unclealan.github.io # MUST HAVE, The name of the repo you use to store Gitment comments
+  client_id: b3a68d79d77aeb38f34b # MUST HAVE, Github client id for the Gitment
+  client_secret: dd62acdf69bdbecb65bd8228b1bc9d1f61bf7bb1 # EITHER this or proxy_gateway, Github access secret token for the Gitment
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
