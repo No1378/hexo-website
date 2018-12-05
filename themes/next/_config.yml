@@ -18,18 +18,18 @@ cache:
 # For example, you want to put your custom styles file
 # outside theme directory in root `source/_data`, set
 # `styles: source/_data/styles.styl`
-#custom_file_path:
-  # Default paths: layout/_custom/*
+custom_file_path:
+  #Default paths: layout/_custom/*
   #head: source/_data/head.swig
   #header: source/_data/header.swig
-  #sidebar: source/_data/sidebar.swig
+  sidebar: source/_data/sidebar.swig
 
   # Default path: source/css/_variables/custom.styl
   #variables: source/_data/variables.styl
   # Default path: source/css/_mixins/custom.styl
   #mixins: source/_data/mixins.styl
   # Default path: source/css/_custom/custom.styl
-  #styles: source/_data/styles.styl
+  # styles: source/_data/sidebar.styl
 
 
 # ---------------------------------------------------------------
@@ -45,9 +45,13 @@ cache:
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
+  #small: /images/favicon-16x16-next.png
+  small: /images/favicon.png
+  #medium: /images/favicon-32x32-next.png
+  medium: /images/favicon.png
+  #apple_touch_icon: /images/apple-touch-icon-next.png
+  apple_touch_icon: /images/favicon.png
+  #safari_pinned_tab: /images/logo.svg
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
@@ -547,7 +551,7 @@ valine:
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction
 gitment:
-  enable: true
+  enable: false
   mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
